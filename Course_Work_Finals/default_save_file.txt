@@ -1,0 +1,8 @@
+search_depth = 2
+image_name = friends_connections.png
+save_image = True
+show_image = True
+find_one_link = True
+show_full_trees = False
+use_cache = True
+max_links_shown = 5
