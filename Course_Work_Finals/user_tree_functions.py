@@ -65,6 +65,9 @@ def get_friends(user):
         print("Rate limit reached! Waiting...")
         wait_15_minutes()
         return get_friends(user)
+    except tweepy.error.TweepError:
+        print("Skipping user whose information is protected.")
+        return list()
 
 
 def get_friends_ids(api, user_id):
